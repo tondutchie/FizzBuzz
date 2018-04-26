@@ -136,8 +136,8 @@
 		3041ED14207DBF79007ED68A /* FizzBuzzUITests */ = {
 			isa = PBXGroup;
 			children = (
-				30CB28942091B3CA0046381B /* SnapshotHelper.swift */,
 				30CF48372084825100A26CC1 /* ViewControllerUiTest.swift */,
+				30CB28942091B3CA0046381B /* SnapshotHelper.swift */,
 				3041ED17207DBF79007ED68A /* Info.plist */,
 			);
 			path = FizzBuzzUITests;
