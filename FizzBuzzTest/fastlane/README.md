@@ -26,6 +26,11 @@ Description of what the lane does
 fastlane ios make_ipa
 ```
 
+### ios beta
+```
+fastlane ios beta
+```
+
 ### ios uploadTestFlight
 ```
 fastlane ios uploadTestFlight

@@ -44,17 +44,30 @@ lane :make_ipa do
   # build_number: "1.0.1"
     )  
     gym(
+      # workspace: "FizzBuzz.xcworkspace",
+      # configuration: "Debug",
+      # scheme: "FizzBuzz",
+      # clean: true,
+      # include_bitcode: false,
+      # output_directory: "./build",
+      # output_name: "FizzBuzzTest_",
+      # export_method: "development"
+
       workspace: "FizzBuzz.xcworkspace",
-      configuration: "Debug",
+      configuration: "Release",
       scheme: "FizzBuzz",
       clean: true,
       include_bitcode: false,
       output_directory: "./build",
-      output_name: "FizzBuzzTest_",
-      export_method: "development"
+      output_name: "FizzBuzzTestFlight",
+      export_method: "app-store"
     )
 
   end
+
+  lane :beta do
+  pilot(ipa: "./build/FizzBuzzTest_.ipa")
+end
 
   lane :uploadTestFlight do
     pilot(

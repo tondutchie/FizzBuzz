@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "c58fad4471a2974b02461b19a28a5689"
+build_time: [1525256131, 19512000]
+inputs:
+  "/Users/tondutchie/Documents/tdcDocuments/TDC/Coding/FizzBuzzGit/FizzBuzzTest/FizzBuzz/Move.swift": [9223372036, 854775807]
+  "/Users/tondutchie/Documents/tdcDocuments/TDC/Coding/FizzBuzzGit/FizzBuzzTest/FizzBuzz/ViewController.swift": [9223372036, 854775807]
+  "/Users/tondutchie/Documents/tdcDocuments/TDC/Coding/FizzBuzzGit/FizzBuzzTest/FizzBuzz/Brain.swift": [9223372036, 854775807]
+  "/Users/tondutchie/Documents/tdcDocuments/TDC/Coding/FizzBuzzGit/FizzBuzzTest/FizzBuzz/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/tondutchie/Documents/tdcDocuments/TDC/Coding/FizzBuzzGit/FizzBuzzTest/FizzBuzz/Game.swift": [9223372036, 854775807]
