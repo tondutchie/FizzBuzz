@@ -34,11 +34,11 @@ end
 
 
 lane :make_ipa do
-  increment_version_number(
-     # bump_type: "major, minor, patch"
-  # build_number: "3.0"
-  bump_type: "patch"
-  )
+  # increment_version_number(
+  #    # bump_type: "major, minor, patch"
+  # # build_number: "3.0"
+  # bump_type: "patch"
+  # )
 
   increment_build_number(
   # build_number: "1.0.1"
@@ -66,15 +66,20 @@ lane :make_ipa do
   end
 
   lane :beta do
-  pilot(ipa: "./build/FizzBuzzTest_.ipa")
+  pilot(ipa: "./build/FizzBuzzTest_.ipa",
+    apple_id: "com.krungsri.fizbuz"
+    )
+
 end
 
   lane :uploadTestFlight do
+    increment_build_number
     pilot(
     username: "itaycap.digital@krungsri.com",
     app_identifier: "com.krungsri.fizbuz",
-    ipa: "./build/FizzBuzzTest_.ipa",
-    apple_id: "com.krungsri.fizbuz"
+    ipa: "./build/FizzBuzzTestFlight.ipa",
+    apple_id: "com.krungsri.fizbuz",
+    skip_waiting_for_build_processing: "true"
 )
   end
 
