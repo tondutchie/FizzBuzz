@@ -7,9 +7,9 @@ pipeline {
         LC_ALL = 'en_US.UTF-8'
     }
 
-     parameters {
-    string(defaultValue: "test", description: "build type", name: "type")
-  }
+     //parameters {
+    //string(defaultValue: "test", description: "build type", name: "type")
+  //}
 
   stages {
 
