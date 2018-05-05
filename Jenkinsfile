@@ -18,6 +18,7 @@ pipeline {
         echo "build type: ${params.type}"
         sh "env"
       }
+    }
 
 stage('test') {
       when {
