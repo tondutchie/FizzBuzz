@@ -19,7 +19,7 @@ pipeline {
 stage('test') {
       steps {
         echo 'Unit Test'
-        fastlane make_ipa
+       
       }
     }
 
