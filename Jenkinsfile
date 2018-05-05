@@ -14,10 +14,10 @@ pipeline {
         echo 'Ton Dutchie'
       }
     }
-    
+
 stage('Build') {
             steps {
-                sh 'printenv'
+                sh 'fastlane make_ipa'
             }
         }
 
