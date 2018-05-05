@@ -5,18 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'make_ipa'
+                sh 'mvn'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+      
     }
 }
