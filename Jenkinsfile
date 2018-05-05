@@ -27,7 +27,7 @@ stage('test') {
         }
       }
       steps {
-        sh 'fastlane make_ipa'
+        sh "fastlane make_ipa"
       }
     }
 
