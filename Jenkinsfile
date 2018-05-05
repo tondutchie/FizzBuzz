@@ -1,13 +1,34 @@
 pipeline {
     agent any
 
-    stages {  
-        stage('Build') {
-            steps {
-                echo 'Building..'
-                sh 'mvn'
-            }
-        }
-      
+    environment {
+        LANG = 'en_US.UTF-8'
+        LANGUAGE = 'en_US.UTF-8'
+        LC_ALL = 'en_US.UTF-8'
     }
+
+     parameters {
+    string(defaultValue: "test", description: "build type", name: "type")
+  }
+
+  stages {
+
+    stage('prepare') {
+      steps {
+        echo "build type: ${params.type}"
+        sh "env"
+      }
+
+stage('test') {
+      when {
+        expression {
+          return params.type == "test"
+        }
+      }
+      steps {
+        sh 'fastlane make_ipa'
+      }
+    }
+
+    } //stages
 }
