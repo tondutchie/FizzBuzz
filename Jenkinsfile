@@ -14,12 +14,12 @@ pipeline {
         echo 'Ton Dutchie'
       }
     }
-
-stage('test') {
-      steps {
-        pwd
-      }
-    }
+    
+stage('Build') {
+            steps {
+                sh 'printenv'
+            }
+        }
 
     } //stages
 }
