@@ -11,15 +11,14 @@ pipeline {
 
     stage('prepare') {
       steps {
-        echo "build type: ${params.type}"
-        sh "env"
+        echo 'Ton Dutchie'
       }
     }
 
 stage('test') {
       steps {
         echo 'Unit Test'
-      
+        sh 'fastlane make_ipa'
       }
     }
 
