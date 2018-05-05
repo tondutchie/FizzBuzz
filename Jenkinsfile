@@ -27,7 +27,7 @@ stage('test') {
         }
       }
       steps {
-        sh 'make_ipa'
+        echo 'Unit Test'
       }
     }
 
