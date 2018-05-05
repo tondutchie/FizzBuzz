@@ -17,14 +17,8 @@ pipeline {
     }
 
 stage('test') {
-      when {
-        expression {
-          return params.type == "test"
-        }
-      }
       steps {
         echo 'Unit Test'
-        //sh 'fastlane make_ipa'
         fastlane make_ipa
       }
     }
