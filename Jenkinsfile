@@ -1,18 +1,21 @@
 pipeline {
-  agent any
-  stages {
-    stage('test') {
+    agent any
 
-      steps {
-        sh 'fastlane tests'
-      }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
-
-    stage('beta') {
-
-      steps {
-        sh 'fastlane make_ipa'
-      }
-    }
-    }
-   }
+}
