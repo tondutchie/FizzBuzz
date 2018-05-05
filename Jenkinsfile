@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'fastlane make_ipa'
             }
         }
         stage('Test') {
