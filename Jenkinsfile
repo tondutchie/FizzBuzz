@@ -17,14 +17,8 @@ pipeline {
 
 stage('test') {
       steps {
-        echo 'Unit Test'
+        pwd
       }
-        steps {
-            pwd
-        }
-        steps {
-            ls
-        }
     }
 
     } //stages
