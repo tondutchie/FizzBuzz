@@ -1,0 +1,87 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  
+lane :tests do
+  run_tests(workspace: "FizzBuzz.xcworkspace",
+	   devices: ["iPhone 8", "iPad Air"],
+     scheme: "FizzBuzz"
+            )
+end
+
+
+lane :make_ipa do
+  # increment_version_number(
+  #    # bump_type: "major, minor, patch"
+  # # build_number: "3.0"
+  # bump_type: "patch"
+  # )
+
+  # increment_build_number(
+  # build_number: "1.0.1"
+  #   )  
+    gym(
+      # workspace: "FizzBuzz.xcworkspace",
+      # configuration: "Debug",
+      # scheme: "FizzBuzz",
+      # clean: true,
+      # include_bitcode: false,
+      # output_directory: "./build",
+      # output_name: "FizzBuzzTest_",
+      # export_method: "development"
+
+      workspace: "FizzBuzz.xcworkspace",
+      configuration: "Release",
+      scheme: "FizzBuzz",
+      clean: true,
+      include_bitcode: false,
+      output_directory: "./build",
+      output_name: "FizzBuzzTestFlight",
+      export_method: "app-store"
+    )
+
+  end
+
+  lane :beta do
+  pilot(ipa: "./build/FizzBuzzTest_.ipa",
+    apple_id: "com.krungsri.fizbuz"
+    )
+
+end
+
+  lane :uploadTestFlight do
+    build_number = latest_testflight_build_number(
+      app_identifier: CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier),
+      version: get_version_number(xcodeproj: "FizzBuzz")
+    ) + 1
+
+    increment_build_number({
+      build_number: build_number
+    })
+    pilot(
+    username: "itaycap.digital@krungsri.com",
+    app_identifier: "com.krungsri.fizbuz",
+    ipa: "./build/FizzBuzzTestFlight.ipa",
+    apple_id: "com.krungsri.fizbuz",
+    skip_waiting_for_build_processing: true
+)
+  end
+
+
+end
