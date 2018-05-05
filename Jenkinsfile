@@ -13,6 +13,7 @@ pipeline {
       steps {
         echo "build type: ${params.type}"
         sh "env"
+        sh "./calaba.sh"
         //sh 'cd fastlane'
       }
     }
