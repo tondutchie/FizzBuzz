@@ -29,7 +29,8 @@ stage('test') {
       }
       steps {
         echo 'Unit Test'
-        sh 'fastlane make_ipa'
+        //sh 'fastlane make_ipa'
+        sh("fastlane make_ipa'")
       }
     }
 
