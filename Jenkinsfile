@@ -17,6 +17,7 @@ pipeline {
       steps {
         echo "build type: ${params.type}"
         sh "env"
+        sh 'cd fastlane'
       }
     }
 
@@ -28,6 +29,7 @@ stage('test') {
       }
       steps {
         echo 'Unit Test'
+        sh 'fastlane make_ipa'
       }
     }
 
