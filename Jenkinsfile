@@ -17,7 +17,7 @@ pipeline {
       steps {
         echo "build type: ${params.type}"
         sh "env"
-        sh 'cd fastlane'
+        //sh 'cd fastlane'
       }
     }
 
