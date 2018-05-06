@@ -12,6 +12,7 @@ pipeline {
     stage('prepare') {
       steps {
         echo 'Ton Dutchie'
+        sh 'gem install fastlane -NV'
       }
     }
 
