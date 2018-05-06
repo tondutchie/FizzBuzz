@@ -15,12 +15,17 @@
 
 default_platform(:ios)
 
+ before_all do
+   ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"  
+  end
+
 platform :ios do
   desc "Description of what the lane does"
   
 lane :tests do
   run_tests(workspace: "FizzBuzz.xcworkspace",
-	   devices: ["iPhone 8", "iPad Air"],
+	   # devices: ["iPhone 8", "iPad Air"],
+     devices: ["iPhone 8"],
      scheme: "FizzBuzz"
             )
 end
