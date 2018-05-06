@@ -15,9 +15,9 @@ pipeline {
       }
     }
 
-stage('Build') {
+	stage('Build') {
             steps {
-                sh 'fastlane make_ipa'
+                sh 'fastlane tests'
             }
         }
 
