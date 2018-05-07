@@ -14,7 +14,13 @@ pipeline {
         echo 'Ton Dutchie'
       }
     }
-
+  stage('Environment Integrity Check') {
+            steps {
+                    echo 'Environment Integrity Check'
+                    sh 'gem install --user-install cocoapods-clean'
+                    sh 'pod install'
+                  }  
+        }
 	stage('Build') {
             steps {
                 sh 'fastlane tests'
