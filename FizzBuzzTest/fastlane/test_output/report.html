@@ -30,7 +30,8 @@
       .test.passing { background-color: #CAF59F;}
       .test.failing.odd { background-color: #EEC7CC;}
       .test.passing.odd { background-color: #E5FBCF;}
-      .details { background-color: #F4DDE0; border: 1px solid #C84F5E;}
+      .details.failing { background-color: #F4DDE0; border: 1px solid #C84F5E;}
+      .details.passing { background-color: #E5F4DC; border: 1px solid #A1D761;}
       .test .test-detail:last-child { padding-bottom: 8px;}
       .test .title { float: left; font-size: 0.9em; margin-top: 8px; font-family: Menlo, Monaco, monospace;}
       .test .time { float: left;margin: 4px 10px 0 20px;}
@@ -125,7 +126,6 @@
             <h3 class="title">FizzBuzzTests.BrainTest</h3>
           </section>
           <section class="tests">
-            
             <table>
             
               
@@ -248,14 +248,13 @@
             <h3 class="title">FizzBuzzTests.GameTest</h3>
           </section>
           <section class="tests">
-            
             <table>
             
               
               <tr class="test passing "  onclick="toggleDetails('testGameStartAtZero');">
                 <td>
                   
-                    <h3 class="time">0.001s</h3>
+                    <h3 class="time">0.000s</h3>
                   
                 </td>
                 <td><h3 class="title">testGameStartAtZero</h3></td>
@@ -299,7 +298,7 @@
               <tr class="test passing "  onclick="toggleDetails('testIfFizzBuzzMoveIsWrong');">
                 <td>
                   
-                    <h3 class="time">0.000s</h3>
+                    <h3 class="time">0.007s</h3>
                   
                 </td>
                 <td><h3 class="title">testIfFizzBuzzMoveIsWrong</h3></td>
@@ -310,7 +309,7 @@
               <tr class="test passing odd"  onclick="toggleDetails('testIfMoveIsRight');">
                 <td>
                   
-                    <h3 class="time">0.006s</h3>
+                    <h3 class="time">0.000s</h3>
                   
                 </td>
                 <td><h3 class="title">testIfMoveIsRight</h3></td>
@@ -393,14 +392,13 @@
             <h3 class="title">FizzBuzzTests.ViewControllerUnitTest</h3>
           </section>
           <section class="tests">
-            
             <table>
             
               
               <tr class="test passing "  onclick="toggleDetails('testBuzzIncrementScore');">
                 <td>
                   
-                    <h3 class="time">0.008s</h3>
+                    <h3 class="time">0.011s</h3>
                   
                 </td>
                 <td><h3 class="title">testBuzzIncrementScore</h3></td>
@@ -411,7 +409,7 @@
               <tr class="test passing odd"  onclick="toggleDetails('testFizzBuzzIncrementScore');">
                 <td>
                   
-                    <h3 class="time">0.008s</h3>
+                    <h3 class="time">0.006s</h3>
                   
                 </td>
                 <td><h3 class="title">testFizzBuzzIncrementScore</h3></td>
@@ -483,14 +481,13 @@
             <h3 class="title">FizzBuzzUITests.ViewControllerUiTest</h3>
           </section>
           <section class="tests">
-            
             <table>
             
               
               <tr class="test passing "  onclick="toggleDetails('testTapBuzzButtonIncrementTo5');">
                 <td>
                   
-                    <h3 class="time">11.714s</h3>
+                    <h3 class="time">12.713s</h3>
                   
                 </td>
                 <td><h3 class="title">testTapBuzzButtonIncrementTo5</h3></td>
@@ -501,7 +498,7 @@
               <tr class="test passing odd"  onclick="toggleDetails('testTapFizzButtonIncrementTo3');">
                 <td>
                   
-                    <h3 class="time">10.207s</h3>
+                    <h3 class="time">10.341s</h3>
                   
                 </td>
                 <td><h3 class="title">testTapFizzButtonIncrementTo3</h3></td>
@@ -512,7 +509,7 @@
               <tr class="test passing "  onclick="toggleDetails('testTapfizzbuzzButtonIncrementTo15');">
                 <td>
                   
-                    <h3 class="time">15.635s</h3>
+                    <h3 class="time">15.824s</h3>
                   
                 </td>
                 <td><h3 class="title">testTapfizzbuzzButtonIncrementTo15</h3></td>
@@ -523,7 +520,7 @@
               <tr class="test passing odd"  onclick="toggleDetails('testTapNumberButtonIncrementsScore');">
                 <td>
                   
-                    <h3 class="time">9.218s</h3>
+                    <h3 class="time">9.128s</h3>
                   
                 </td>
                 <td><h3 class="title">testTapNumberButtonIncrementsScore</h3></td>
@@ -534,7 +531,7 @@
               <tr class="test passing "  onclick="toggleDetails('testTapNumberButtonTwiceIncrementsScoreTo2');">
                 <td>
                   
-                    <h3 class="time">9.370s</h3>
+                    <h3 class="time">9.720s</h3>
                   
                 </td>
                 <td><h3 class="title">testTapNumberButtonTwiceIncrementsScoreTo2</h3></td>

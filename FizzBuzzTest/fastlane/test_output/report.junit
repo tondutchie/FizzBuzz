@@ -13,12 +13,12 @@
     <testcase classname='FizzBuzzTests.BrainTest' name='testSayNumber' time='0.000'/>
   </testsuite>
   <testsuite name='FizzBuzzTests.GameTest' tests='12' failures='0'>
-    <testcase classname='FizzBuzzTests.GameTest' name='testGameStartAtZero' time='0.001'/>
+    <testcase classname='FizzBuzzTests.GameTest' name='testGameStartAtZero' time='0.000'/>
     <testcase classname='FizzBuzzTests.GameTest' name='testIfBuzzMoveIsRight' time='0.000'/>
     <testcase classname='FizzBuzzTests.GameTest' name='testIfBuzzMoveIsWrong' time='0.000'/>
     <testcase classname='FizzBuzzTests.GameTest' name='testIfFizzBuzzMoveIsRight' time='0.000'/>
-    <testcase classname='FizzBuzzTests.GameTest' name='testIfFizzBuzzMoveIsWrong' time='0.000'/>
-    <testcase classname='FizzBuzzTests.GameTest' name='testIfMoveIsRight' time='0.006'/>
+    <testcase classname='FizzBuzzTests.GameTest' name='testIfFizzBuzzMoveIsWrong' time='0.007'/>
+    <testcase classname='FizzBuzzTests.GameTest' name='testIfMoveIsRight' time='0.000'/>
     <testcase classname='FizzBuzzTests.GameTest' name='testIfMoveIsWrong' time='0.000'/>
     <testcase classname='FizzBuzzTests.GameTest' name='testIfMoveWrongScoreNotIncremented' time='0.001'/>
     <testcase classname='FizzBuzzTests.GameTest' name='testNumberMoveRight' time='0.000'/>
@@ -27,8 +27,8 @@
     <testcase classname='FizzBuzzTests.GameTest' name='testPlayShouldReturnNewScore' time='0.000'/>
   </testsuite>
   <testsuite name='FizzBuzzTests.ViewControllerUnitTest' tests='7' failures='0'>
-    <testcase classname='FizzBuzzTests.ViewControllerUnitTest' name='testBuzzIncrementScore' time='0.008'/>
-    <testcase classname='FizzBuzzTests.ViewControllerUnitTest' name='testFizzBuzzIncrementScore' time='0.008'/>
+    <testcase classname='FizzBuzzTests.ViewControllerUnitTest' name='testBuzzIncrementScore' time='0.011'/>
+    <testcase classname='FizzBuzzTests.ViewControllerUnitTest' name='testFizzBuzzIncrementScore' time='0.006'/>
     <testcase classname='FizzBuzzTests.ViewControllerUnitTest' name='testFizzIncrementScore' time='0.006'/>
     <testcase classname='FizzBuzzTests.ViewControllerUnitTest' name='testFizzMoveIsWrong' time='0.006'/>
     <testcase classname='FizzBuzzTests.ViewControllerUnitTest' name='testHasAGame' time='0.008'/>
@@ -36,10 +36,10 @@
     <testcase classname='FizzBuzzTests.ViewControllerUnitTest' name='testMove2IncrementScores' time='0.005'/>
   </testsuite>
   <testsuite name='FizzBuzzUITests.ViewControllerUiTest' tests='5' failures='0'>
-    <testcase classname='FizzBuzzUITests.ViewControllerUiTest' name='testTapBuzzButtonIncrementTo5' time='11.714'/>
-    <testcase classname='FizzBuzzUITests.ViewControllerUiTest' name='testTapFizzButtonIncrementTo3' time='10.207'/>
-    <testcase classname='FizzBuzzUITests.ViewControllerUiTest' name='testTapfizzbuzzButtonIncrementTo15' time='15.635'/>
-    <testcase classname='FizzBuzzUITests.ViewControllerUiTest' name='testTapNumberButtonIncrementsScore' time='9.218'/>
-    <testcase classname='FizzBuzzUITests.ViewControllerUiTest' name='testTapNumberButtonTwiceIncrementsScoreTo2' time='9.370'/>
+    <testcase classname='FizzBuzzUITests.ViewControllerUiTest' name='testTapBuzzButtonIncrementTo5' time='12.713'/>
+    <testcase classname='FizzBuzzUITests.ViewControllerUiTest' name='testTapFizzButtonIncrementTo3' time='10.341'/>
+    <testcase classname='FizzBuzzUITests.ViewControllerUiTest' name='testTapfizzbuzzButtonIncrementTo15' time='15.824'/>
+    <testcase classname='FizzBuzzUITests.ViewControllerUiTest' name='testTapNumberButtonIncrementsScore' time='9.128'/>
+    <testcase classname='FizzBuzzUITests.ViewControllerUiTest' name='testTapNumberButtonTwiceIncrementsScoreTo2' time='9.720'/>
   </testsuite>
 </testsuites>

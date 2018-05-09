@@ -13,12 +13,14 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
+fastlane_version "2.94.0"
+
 default_platform(:ios)
 
  before_all do
    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"  
-   export LC_ALL=en_US.UTF-8
-   export LANG=en_US.UTF-8
+   # export LC_ALL=en_US.UTF-8
+   # export LANG=en_US.UTF-8
   end
 
 platform :ios do
