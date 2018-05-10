@@ -19,11 +19,6 @@ default_platform(:ios)
 
  before_all do
    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"  
-
-   gem "fastlane"
-
-   export LC_ALL=en_US.UTF-8
-   export LANG=en_US.UTF-8
   end
 
 platform :ios do
