@@ -26,7 +26,7 @@ platform :ios do
   desc "Description of what the lane does"
 
 desc "Push a new beta build to Fabric beta"
-  lane :beta do
+  lane :fabric do
   		scheme = "FizzBuzz"
    	    configuration = "ad-hoc"
 

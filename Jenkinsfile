@@ -9,9 +9,9 @@ pipeline {
       }
     }
 
-    stage('Test') {
+    stage('Fabric') {
       steps {
-        sh 'fastlane beta'
+        sh 'fastlane fabric'
       }
     }
   }
