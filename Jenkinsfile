@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'fastlane tests'
+        sh "echo 'fastlane tests'"
       }
     }
   }
