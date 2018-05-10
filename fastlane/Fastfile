@@ -25,11 +25,11 @@ platform :ios do
   desc "Description of what the lane does"
   
 lane :tests do
-  run_tests(workspace: "FizzBuzz.xcworkspace",
-     devices: ["iPhone 8"],
-     scheme: "FizzBuzz",
-     skip_testing: "FizzBuzzUITests"
-            )
+  # run_tests(workspace: "FizzBuzz.xcworkspace",
+  #    devices: ["iPhone 8"],
+  #    scheme: "FizzBuzz",
+  #    skip_testing: "FizzBuzzUITests"
+  #           )
 end
 
 
@@ -44,23 +44,23 @@ lane :make_ipa do
   # build_number: "1.0.1"
   #   )  
     gym(
-      # workspace: "FizzBuzz.xcworkspace",
-      # configuration: "Debug",
-      # scheme: "FizzBuzz",
-      # clean: true,
-      # include_bitcode: false,
-      # output_directory: "./build",
-      # output_name: "FizzBuzzTest_",
-      # export_method: "development"
-
       workspace: "FizzBuzz.xcworkspace",
-      configuration: "Release",
+      configuration: "Debug",
       scheme: "FizzBuzz",
       clean: true,
       include_bitcode: false,
       output_directory: "./build",
-      output_name: "FizzBuzzTestFlight",
-      export_method: "app-store"
+      output_name: "FizzBuzzTest_",
+      export_method: "development"
+
+      # workspace: "FizzBuzz.xcworkspace",
+      # configuration: "Release",
+      # scheme: "FizzBuzz",
+      # clean: true,
+      # include_bitcode: false,
+      # output_directory: "./build",
+      # output_name: "FizzBuzzTestFlight",
+      # export_method: "app-store"
     )
 
   end
