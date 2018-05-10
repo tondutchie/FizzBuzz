@@ -1,11 +1,6 @@
 pipeline {
   agent any
 
-  environment {
-    export LC_ALL=en_US.UTF-8
-    export LANG=en_US.UTF-8
-  }
-
   stages {
 
     stage('prepare') {
@@ -13,7 +8,7 @@ pipeline {
         echo 'Ton Dutchie'
       }
     }
-    
+
     stage('Build') {
       steps {
         sh 'fastlane tests'
