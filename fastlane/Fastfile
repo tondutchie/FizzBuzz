@@ -15,26 +15,38 @@
 
 fastlane_version "2.94.0"
 
+generated_fastfile_id "678402ec-d564-47e6-a1ed-b6530fee19ad"
+
 default_platform(:ios)
 
  before_all do |lane,options|
+  clear_derived_data
    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"  
   end
 
 platform :ios do
   desc "Description of what the lane does"
+      appId = "com.krungsri.fizbuz"
+      username = "itaycap.digital@krungsri.com"
+      scheme = "FizzBuzz"
+      configuration = "ad-hoc"
+      #token = "68c18894f9ca4a3ad7c733257ffe5889825ce24f" #for uchoose
+      # secretKey = "7c863c56add739ecce170c8ee5072c94edccfeb50d19f9ef88211efdbe12f1fe" #for uchoose
+      token = "fecc2f93b1164f5217c9ff03d0ee37dac34aa913" #for FizzBuzz
+      secretKey = "b9f8b831d8deb92b855e648965f59a4f94be257746dcc039f230b60987768b74" #for FizzBuzz
+
 
 desc "Push a new beta build to Fabric beta"
   lane :fabric do
-  		scheme = "FizzBuzz"
-   	  configuration = "ad-hoc"
-
+      
       sigh(
+      username: username,
+      app_identifier: appId,
       adhoc: true
     )
 
     	 build_ios_app(
-     workspace: "FizzBuzz.xcworkspace",
+      workspace: "FizzBuzz.xcworkspace",
       configuration: "Debug",
       clean: false,
       scheme: scheme, 
@@ -46,12 +58,10 @@ desc "Push a new beta build to Fabric beta"
     # this will generate the changelog based on your last commits
     changelog_from_git_commits
 
-    #upload to Beta by Crashlytics
     crashlytics(
-      # keys for organization: AYCAP
-      api_token: "68c18894f9ca4a3ad7c733257ffe5889825ce24f",
-      build_secret: "7c863c56add739ecce170c8ee5072c94edccfeb50d19f9ef88211efdbe12f1fe",
-      emails: "pumwaree@gmail.com",
+      api_token: token,
+      build_secret: secretKey,
+      # emails: "pumwaree@gmail.com",
       notifications: true
     )
   end
