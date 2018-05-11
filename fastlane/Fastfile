@@ -18,7 +18,6 @@ fastlane_version "2.94.0"
 default_platform(:ios)
 
  before_all do |lane,options|
-    clear_derived_data
    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"  
   end
 
@@ -28,27 +27,19 @@ platform :ios do
 desc "Push a new beta build to Fabric beta"
   lane :fabric do
   		scheme = "FizzBuzz"
-   	    configuration = "ad-hoc"
+   	  configuration = "ad-hoc"
 
-   	    version = get_version_number(xcodeproj: "FizzBuzz.xcodeproj",target: scheme)
-    	#build_number = get_build_number(xcodeproj: "employee.xcodeproj")
-    	build_number = increment_build_number
-
-    	puts "Version: " +version
-    	puts "Build Number: " +build_number
+      sigh(
+      adhoc: true
+    )
 
     	 build_ios_app(
-      workspace: "FizzBuzz.xcworkspace",
+     workspace: "FizzBuzz.xcworkspace",
       configuration: "Debug",
       clean: false,
       scheme: scheme, 
       export_method: configuration,
-      #export_options: {
-      #  provisioningProfiles: { 
-      #   "com.ks.weconnectDev" => "XC iOS Ad Hoc: com.ks.weconnect",
-       # }
-      #}
-    )
+  )
 
     commit_message = last_git_commit[:message]
 
@@ -60,7 +51,7 @@ desc "Push a new beta build to Fabric beta"
       # keys for organization: AYCAP
       api_token: "68c18894f9ca4a3ad7c733257ffe5889825ce24f",
       build_secret: "7c863c56add739ecce170c8ee5072c94edccfeb50d19f9ef88211efdbe12f1fe",
-      emails: "tatchai.russameroj@gmail.com",
+      emails: "pumwaree@gmail.com",
       notifications: true
     )
   end

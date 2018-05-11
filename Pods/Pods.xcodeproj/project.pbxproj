@@ -37,13 +37,17 @@
 
 /* Begin PBXFileReference section */
 		0FD73611B3FB8ED8C763EF7693B9B54F /* Pods-FizzBuzz-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FizzBuzz-resources.sh"; sourceTree = "<group>"; };
+		200C81134ACADBF4B01AF7F1C51DE9EC /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		221C401B6F0C48AEF15411615826F014 /* Pods-FizzBuzz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FizzBuzz.release.xcconfig"; sourceTree = "<group>"; };
+		29DE526E5B1D3B37719460B12B391B91 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
 		315905612BB4B6241B308B599C635BFD /* Pods-FizzBuzzUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FizzBuzzUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		35FCFB792C37DEF40D87A7BA4B10EEA2 /* Pods-FizzBuzz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FizzBuzz.modulemap"; sourceTree = "<group>"; };
 		36DCE74F044A470ED8EDE107EADC2D61 /* Pods_FizzBuzzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FizzBuzzTests.framework; path = "Pods-FizzBuzzTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		451D3E09459A7EB2C258AD4392092B78 /* Pods-FizzBuzz-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FizzBuzz-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4660A6E69BFE9D7D4CD749A3502B30B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494C290BDBEAED23BA5743A3CE2FA0D1 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
 		5426E4FD42E0765CA85A19D37A258F83 /* Pods-FizzBuzzTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FizzBuzzTests-dummy.m"; sourceTree = "<group>"; };
+		5B0AC4555A08701A9F1760172610E0AF /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		5D88F49E53E4AD1D9F9B1B6FA2587947 /* Pods-FizzBuzz-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FizzBuzz-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		66B7852ED54E212A76D8F2B55AAD22C6 /* Pods-FizzBuzzTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FizzBuzzTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -52,12 +56,17 @@
 		773FF3CF30CAE759BF8C7B91B582DE44 /* Pods-FizzBuzzTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FizzBuzzTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		800BF88189502AD854DF50CD4B5E37F1 /* Pods-FizzBuzz-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FizzBuzz-frameworks.sh"; sourceTree = "<group>"; };
 		80FCD58A7C2F7BEFE8C39EB5976ECF92 /* Pods-FizzBuzzTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FizzBuzzTests-frameworks.sh"; sourceTree = "<group>"; };
+		82981FB005A4ED4C556297735FD4ACED /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
 		84A436043BC2A0A9BCC68D5F3A23CA60 /* Pods-FizzBuzzUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FizzBuzzUITests-dummy.m"; sourceTree = "<group>"; };
+		856A7EF81F93DD33C78FA7140067110C /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		8DB331D62E03B90D571016097AB0A7E0 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		92972CC1C216B42A9AB4B6EABB27FC16 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9507FA3CF23E7D3B066A56A9162B6CF7 /* Pods-FizzBuzzTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FizzBuzzTests-umbrella.h"; sourceTree = "<group>"; };
 		981246CFEBBC7476E33F201FFEC85C8C /* Pods-FizzBuzz-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FizzBuzz-umbrella.h"; sourceTree = "<group>"; };
 		9E32CAD35F1A3DEBD8A69D26F606075E /* Pods-FizzBuzzUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FizzBuzzUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A44130FFF6F9BA3DA5DAACD9CBDEB924 /* Pods_FizzBuzzUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FizzBuzzUITests.framework; path = "Pods-FizzBuzzUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61E08527EFC3DBEDD4BFA0B5C45104C /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
 		AFDFADB667C472032C00EA39C7C1B447 /* Pods-FizzBuzzUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FizzBuzzUITests-umbrella.h"; sourceTree = "<group>"; };
 		B2C091A99BA4B7EE7B13227D0BABA263 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7CCADCBCB77C169FDB7E5B7604A3CEB /* Pods-FizzBuzzTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FizzBuzzTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +77,8 @@
 		D49EDDC3D67292A7EC5FA8ABE9057209 /* Pods-FizzBuzzUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FizzBuzzUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D76EA2D8AB724E7CD02EA79F53D1820D /* Pods-FizzBuzzTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FizzBuzzTests.modulemap"; sourceTree = "<group>"; };
 		D8E4CFAA236F2F2F8FEAB74418CEDBFB /* Pods-FizzBuzzUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FizzBuzzUITests.modulemap"; sourceTree = "<group>"; };
+		DBA48C54AB315A7317F3DD387EF04883 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		EAC88243AB9F702F3015F7068842116A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		ED782B8CD8F074739F08E6CBC6790BB1 /* Pods-FizzBuzzUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FizzBuzzUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F71A20DD54CDFB7C7F27109F5F33354F /* Pods-FizzBuzzTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FizzBuzzTests-resources.sh"; sourceTree = "<group>"; };
 		FBB13DDB80E19748DEAAC87A50B471DF /* Pods-FizzBuzzUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FizzBuzzUITests-resources.sh"; sourceTree = "<group>"; };
@@ -119,6 +130,39 @@
 			path = "Target Support Files/Pods-FizzBuzz";
 			sourceTree = "<group>";
 		};
+		1DECF7299F0875E9BCB9492390207331 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26F9D6AB1F30C869A5F58AF8EF5A99C8 /* Crashlytics */,
+				D479A0301687E2A8F6F67D392B8551D2 /* Fabric */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		26F9D6AB1F30C869A5F58AF8EF5A99C8 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				5B0AC4555A08701A9F1760172610E0AF /* ANSCompatibility.h */,
+				A61E08527EFC3DBEDD4BFA0B5C45104C /* Answers.h */,
+				8DB331D62E03B90D571016097AB0A7E0 /* CLSAttributes.h */,
+				29DE526E5B1D3B37719460B12B391B91 /* CLSLogging.h */,
+				856A7EF81F93DD33C78FA7140067110C /* CLSReport.h */,
+				DBA48C54AB315A7317F3DD387EF04883 /* CLSStackFrame.h */,
+				200C81134ACADBF4B01AF7F1C51DE9EC /* Crashlytics.h */,
+				E268B07786115FF5D5DFF396150E695F /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		2DDA681774534EB985F60A3418A4C908 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92972CC1C216B42A9AB4B6EABB27FC16 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3489BB95C89881617EC070DDFDD4602A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +196,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				1DECF7299F0875E9BCB9492390207331 /* Pods */,
 				3489BB95C89881617EC070DDFDD4602A /* Products */,
 				F02A137A2A4F505FB1F74212A0EA51DA /* Targets Support Files */,
 			);
@@ -173,6 +218,17 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		D479A0301687E2A8F6F67D392B8551D2 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				494C290BDBEAED23BA5743A3CE2FA0D1 /* FABAttributes.h */,
+				82981FB005A4ED4C556297735FD4ACED /* Fabric.h */,
+				2DDA681774534EB985F60A3418A4C908 /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
 		DDF587CD45035AC9B4C72DE7645D1FD7 /* Pods-FizzBuzzUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +245,14 @@
 			);
 			name = "Pods-FizzBuzzUITests";
 			path = "Target Support Files/Pods-FizzBuzzUITests";
+			sourceTree = "<group>";
+		};
+		E268B07786115FF5D5DFF396150E695F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC88243AB9F702F3015F7068842116A /* Crashlytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F02A137A2A4F505FB1F74212A0EA51DA /* Targets Support Files */ = {

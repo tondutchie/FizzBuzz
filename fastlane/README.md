@@ -16,11 +16,18 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
+### ios fabric
+```
+fastlane ios fabric
+```
+Description of what the lane does
+
+Push a new beta build to Fabric beta
 ### ios tests
 ```
 fastlane ios tests
 ```
-Description of what the lane does
+
 ### ios make_ipa
 ```
 fastlane ios make_ipa
