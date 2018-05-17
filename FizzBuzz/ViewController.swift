@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     var gameScore: Int? {
         didSet {
             guard let unwrappedScore = gameScore else {
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var fizzButton: UIButton!
     @IBOutlet weak var buzzButton: UIButton!
     @IBOutlet weak var fizzbuzzButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         gameScore = 0
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         gameScore = checkedGame.score
     }
 
-    func play(move: Move){
+    func play(move: Move) {
         guard let unwrappedGame = game else {
             print("Game is nil!")
             return
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         gameScore = response.score
     }
     @IBAction func buttonTapped(_ sender: UIButton) {
-        switch sender{
+        switch sender {
         case numberButton:
             play(move: .number)
         case fizzButton:
@@ -59,4 +59,3 @@ class ViewController: UIViewController {
         }
     }
 }
-

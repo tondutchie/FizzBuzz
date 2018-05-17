@@ -357,16 +357,16 @@
 		};
 		30517EF620A5379D00AABAC3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 68c18894f9ca4a3ad7c733257ffe5889825ce24f 7c863c56add739ecce170c8ee5072c94edccfeb50d19f9ef88211efdbe12f1fe\n";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 68c18894f9ca4a3ad7c733257ffe5889825ce24f 7c863c56add739ecce170c8ee5072c94edccfeb50d19f9ef88211efdbe12f1fe\n\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		3CC7D7613FDC0D122023B05A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

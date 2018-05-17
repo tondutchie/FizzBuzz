@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Move{
+enum Move {
     case number
     case fizz
     case buzz

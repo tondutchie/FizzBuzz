@@ -9,30 +9,28 @@
 import XCTest
 
 class ViewControllerUiTest: XCTestCase {
-    
+
     let app = XCUIApplication()
-    
+
     override func setUp() {
         super.setUp()
-        
         continueAfterFailure = false
         setupSnapshot(app)
         app.launch()
     }
-    
+
     override func tearDown() {
- 
         super.tearDown()
     }
 
-    func testTapNumberButtonIncrementsScore(){
+    func testTapNumberButtonIncrementsScore() {
         let numberButton = app.buttons["numberButton"]
         numberButton.tap()
         let newScore = numberButton.label
         XCTAssertEqual(newScore, "1")
         snapshot("testTapNumberButtonIncrementsScore")
     }
-    
+
     func testTapNumberButtonTwiceIncrementsScoreTo2() {
         let numberButton = app.buttons["numberButton"]
         numberButton.tap()
@@ -41,7 +39,7 @@ class ViewControllerUiTest: XCTestCase {
         XCTAssertEqual(newScore, "2")
         snapshot("testTapNumberButtonTwiceIncrementsScoreTo2")
     }
-    
+
     func testTapFizzButtonIncrementTo3() {
         let numberButton = app.buttons["numberButton"]
         let fizzButton = app.buttons["fizzButton"]
@@ -52,7 +50,7 @@ class ViewControllerUiTest: XCTestCase {
         XCTAssertEqual(newScore, "3")
         snapshot("testTapFizzButtonIncrementTo3")
     }
-    
+
     func testTapBuzzButtonIncrementTo5() {
         let numberButton = app.buttons["numberButton"]
         let fizzButton = app.buttons["fizzButton"]
@@ -66,17 +64,16 @@ class ViewControllerUiTest: XCTestCase {
         XCTAssertEqual(newScore, "5")
         snapshot("testTapBuzzButtonIncrementTo5")
     }
-    
+
     func testTapfizzbuzzButtonIncrementTo15() {
         let numberButton = app.buttons["numberButton"]
         let fizzbuzzButton = app.buttons["fizzbuzzButton"]
-        
+
         playTo14()
         fizzbuzzButton.tap()
         let newScore = numberButton.label
         XCTAssertEqual(newScore, "15")
     }
-    
     func playTo14() {
         let numberButton = app.buttons["numberButton"]
         let fizzButton = app.buttons["fizzButton"]
@@ -97,14 +94,3 @@ class ViewControllerUiTest: XCTestCase {
         numberButton.tap()
     }
 }
-
-
-
-
-
-
-
-
-
-
-

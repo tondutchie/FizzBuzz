@@ -9,12 +9,12 @@
 import Foundation
 
 class Brain {
-    
+
     func isDivisibleBy(divisior: Int, number: Int) -> Bool {
         return number % divisior == 0
     }
 
-    func isDivisibleByThree (number: Int) -> Bool{
+    func isDivisibleByThree (number: Int) -> Bool {
         return isDivisibleBy(divisior: 3, number: number)
     }
 
@@ -22,21 +22,18 @@ class Brain {
         return isDivisibleBy(divisior: 5, number: number)
     }
 
-    func isDivisibleByFifteen (number: Int) -> Bool{
+    func isDivisibleByFifteen (number: Int) -> Bool {
         return isDivisibleBy(divisior: 15, number: number)
     }
 
     func check(number: Int) -> Move {
-        if isDivisibleByFifteen(number: number){
+        if isDivisibleByFifteen(number: number) {
             return .fizzbuzz
-        }
-        else if isDivisibleByThree(number: number){
+    } else if isDivisibleByThree(number: number) {
             return .fizz
-        }
-        else if isDivisibleByFive(number: number){
+    } else if isDivisibleByFive(number: number) {
             return .buzz
-        }
-        else {
+    } else {
             return .number
         }
     }

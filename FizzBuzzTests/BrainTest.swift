@@ -10,18 +10,17 @@ import XCTest
 @testable import FizzBuzz
 
 class BrainTest: XCTestCase {
-    
+
     let brain = Brain()
-    
+
     override func setUp() {
         super.setUp()
-        
+
     }
     override func tearDown() {
-        
+
         super.tearDown()
     }
-    
 
     func testIsDivisibleByThree() {
         let result = brain.isDivisibleByThree(number: 3)
@@ -43,7 +42,7 @@ class BrainTest: XCTestCase {
         XCTAssertEqual(result, false)
     }
 
-    func testIsDivisibleByFifteen(){
+    func testIsDivisibleByFifteen() {
         let result = brain.isDivisibleByFifteen(number: 15)
         XCTAssertEqual(result, true)
     }
@@ -74,11 +73,3 @@ class BrainTest: XCTestCase {
     }
 
 }
-
-
-
-
-
-
-
-
